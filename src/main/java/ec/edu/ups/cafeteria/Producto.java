@@ -4,7 +4,6 @@ import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.Locale;
 
-/** Un producto del catálogo. Las mutaciones del stock pasan por el servicio. */
 public final class Producto {
     private final String codigo;
     private final String nombre;

@@ -14,7 +14,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 
-/** Pruebas automáticas sin librerías externas. Fallar una comprobación termina con error. */
 public final class PruebasCafeteria {
     private static int correctas;
     private static final Clock RELOJ = Clock.fixed(Instant.parse("2026-10-21T15:30:00Z"), ZoneId.of("America/Guayaquil"));

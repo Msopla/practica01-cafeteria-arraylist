@@ -17,7 +17,6 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
-/** Persistencia en UTF-8. File identifica las rutas; los flujos leen y escriben texto. */
 public final class RepositorioArchivos {
     private static final String CABECERA_PRODUCTOS = "codigo;nombre;precio;stock";
     private static final String CABECERA_PEDIDOS =
@@ -145,7 +144,6 @@ public final class RepositorioArchivos {
 
     public void guardar(List<Producto> productos, List<Pedido> pedidos) throws IOException {
         verificarPareja();
-        // Reutiliza las validaciones del servicio antes de tocar archivos.
         new ServicioCafeteria(productos, pedidos);
         if (!directorio.isDirectory() && !directorio.mkdirs())
             throw new IOException("No se pudo crear la carpeta de datos.");

@@ -2,7 +2,6 @@ package ec.edu.ups.cafeteria;
 
 import java.math.BigDecimal;
 
-/** Copia del código, nombre y precio del producto en el momento de la venta. */
 public final class DetallePedido {
     private final String codigoProducto;
     private final String nombreProducto;

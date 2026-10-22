@@ -8,7 +8,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-/** Reglas de negocio: catálogo, inventario, confirmación y reportes. */
 public final class ServicioCafeteria {
     private final ArrayList<Producto> productos = new ArrayList<>();
     private final ArrayList<Pedido> pedidos = new ArrayList<>();
@@ -89,7 +88,6 @@ public final class ServicioCafeteria {
     public void confirmarPedido(Pedido pedido) {
         exigirBorradorPropio(pedido);
         if (pedido.estaVacio()) throw new IllegalArgumentException("No se puede confirmar un pedido vacío.");
-        // Validar TODO antes de descontar: un rechazo no deja cambios parciales.
         for (DetallePedido d : pedido.getDetalles())
             if (d.getCantidad() > obtenerProducto(d.getCodigoProducto()).getStock())
                 throw new IllegalArgumentException("Stock insuficiente para " + d.getCodigoProducto());

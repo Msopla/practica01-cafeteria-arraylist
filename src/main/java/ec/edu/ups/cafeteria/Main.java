@@ -11,7 +11,6 @@ import java.time.LocalDate;
 import java.time.format.DateTimeParseException;
 import java.util.List;
 
-/** Punto de entrada e interacción de consola; no contiene reglas de inventario. */
 public final class Main {
     private final BufferedReader entrada = new BufferedReader(new InputStreamReader(System.in, StandardCharsets.UTF_8));
     private final RepositorioArchivos repositorio;
@@ -60,7 +59,6 @@ public final class Main {
                 }
             }
         } catch (EOFException e) {
-            // El cierre de la entrada no debe producir un bucle infinito.
             System.out.println("\nEntrada finalizada. Se guardarán las operaciones confirmadas.");
             if (!guardar()) throw new IOException("La entrada se cerró y no fue posible guardar los datos.");
         }
@@ -91,7 +89,7 @@ public final class Main {
             try {
                 int numero = Integer.parseInt(valor);
                 if (numero >= minimo) return numero;
-            } catch (NumberFormatException e) { /* Se solicita otro valor. */ }
+            } catch (NumberFormatException e) { }
             System.out.println("Ingrese un entero entre " + minimo + " y " + Integer.MAX_VALUE + ".");
         }
     }

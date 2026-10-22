@@ -6,7 +6,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-/** Un pedido nace como borrador; al confirmarlo queda cerrado a cambios. */
 public final class Pedido {
     private int id;
     private LocalDateTime fechaHora;
@@ -31,7 +30,6 @@ public final class Pedido {
                 } catch (ArithmeticException e) {
                     throw new IllegalArgumentException("Cantidad demasiado grande.");
                 }
-                // Reemplazar el detalle permite que cada línea sea inmutable.
                 detalles.set(i, new DetallePedido(anterior.getCodigoProducto(),
                         anterior.getNombreProducto(), anterior.getPrecioUnitario(), cantidad));
                 return;
