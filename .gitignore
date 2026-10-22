@@ -1,0 +1,12 @@
+/build/
+/target/
+/datos/
+*.class
+*.log
+.idea/
+*.iml
+.project
+.classpath
+.settings/
+nbproject/private/
+.DS_Store
