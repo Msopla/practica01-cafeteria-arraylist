@@ -1,0 +1,1 @@
+idPedido;fechaHora;codigoProducto;nombreProducto;cantidad;precioUnitario

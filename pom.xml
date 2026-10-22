@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>ec.edu.ups</groupId>
+    <artifactId>cafeteria-arraylist</artifactId>
+    <version>1.0.0</version>
+    <name>Practica 01 - Cafeteria El Buen Sabor</name>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.release>8</maven.compiler.release>
+    </properties>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.13.0</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.3.0</version>
+                <configuration><archive><manifest><mainClass>ec.edu.ups.cafeteria.Main</mainClass></manifest></archive></configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>3.1.0</version>
+                <configuration><mainClass>ec.edu.ups.cafeteria.Main</mainClass></configuration>
+                <executions>
+                    <execution>
+                        <id>pruebas-de-la-practica</id>
+                        <phase>test</phase>
+                        <goals><goal>java</goal></goals>
+                        <configuration>
+                            <mainClass>ec.edu.ups.cafeteria.PruebasCafeteria</mainClass>
+                            <classpathScope>test</classpathScope>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>

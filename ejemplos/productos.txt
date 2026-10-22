@@ -1,0 +1,3 @@
+codigo;nombre;precio;stock
+P001;Café americano;1.50;10
+P002;Sándwich;2.25;5

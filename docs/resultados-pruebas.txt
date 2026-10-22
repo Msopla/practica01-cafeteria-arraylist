@@ -1,0 +1,26 @@
+Fecha: 21 de octubre de 2026
+Runtime: Java 1.8.0_481
+
+OK RF-01 registro y normalización de código
+OK RF-01 rechazar duplicados y datos inválidos
+OK RF-02 catálogo vacío y consulta defensiva
+OK RF-03 reposición válida y rechazos sin cambios
+OK RF-04 consolidación y stock acumulado
+OK RF-05 importes exactos de varios productos
+OK RF-06 confirmación, fecha e inventario
+OK RF-06 stock justo, agotado y pedido vacío
+OK RF-06 revalidación completa sin descuento parcial
+OK RF-07 cancelación y borrador ajeno
+OK RF-08 reporte por fecha y orden de demanda
+OK RF-08 desempate por código
+OK RF-09/10 primer inicio, ida/vuelta UTF-8 y continuidad de ID
+OK RF-09 archivos sin ventas conservan cabeceras
+OK RF-09 error de escritura mantiene memoria
+OK RF-10 falta un archivo: no iniciar vacío
+OK RF-10 errores de productos informan línea y conservan original
+OK RF-10 pedidos malformados, duplicados o huérfanos
+OK RNF-03 precio histórico independiente del catálogo
+OK RNF-02 pedidos y detalles confirmados protegidos
+Tiempo catálogo + reporte (1000 registros): 14 ms
+OK RNF-06 catálogo y reporte con 1.000 registros
+RESULTADO: 21 casos correctos; 0 fallidos.

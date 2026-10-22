@@ -1,0 +1,13 @@
+Validación de consola
+Fecha: 21 de octubre de 2026
+Runtime: java version "1.8.0_481"
+
+OK CLI-01 menu inválido, precio/stock inválidos, venta y guardado
+OK CLI-02 stock persistido y texto UTF-8
+OK CLI-03 reinicio, cancelación y reporte conservado
+OK CLI-04 siguiente ID al reiniciar
+OK CLI-05 EOF cancela borrador y guarda confirmados
+OK CLI-06 cancelar captura sin bloquear menú
+OK CLI-07 archivo inválido detiene inicio sin modificar datos
+
+RESULTADO: 7 escenarios correctos; 0 fallidos.
